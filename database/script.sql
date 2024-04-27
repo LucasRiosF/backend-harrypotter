@@ -17,5 +17,5 @@ CREATE TABLE varinhas (
     material VARCHAR(50) NOT NULL,
     comprimento DECIMAL NOT NULL,
     nucleo VARCHAR(50) NOT NULL,
-    frabricacao DATE NOT NULL
+    fabricacao DATE NOT NULL
 );

@@ -151,7 +151,7 @@ app.put('/varinhas/:id', async(req, res) => {
         const { id } = req.params;
         const {material, comprimento, nucleo, fabricacao}  = req.body;
 
-        await pool.query('UPDATE varinhas SET material = $1, comprimento = $2, nucelo = $3, fabricacao = $4 WHERE id = $5', [material, comprimento, nucleo, fabricacao, id]);
+        await pool.query('UPDATE varinhas SET material = $1, comprimento = $2, nucleo = $3, fabricacao = $4 WHERE id = $5', [material, comprimento, nucleo, fabricacao, id]);
         res.status(200).send({mensagem: 'Varinha editada com sucesso'})
     } catch (error) {
         console.error('Erro ao editar a varinha', error);
