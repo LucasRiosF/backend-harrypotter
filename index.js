@@ -108,8 +108,6 @@ app.get('/bruxos/:nome', async (req, res) => {
 });
 
 
-
-
 app.get('/varinhas', async (req, res) => {
     try {
         const resultado = await pool.query('SELECT * FROM varinhas');
